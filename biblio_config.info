@@ -4,6 +4,7 @@ core = 7.x
 package = Features
 version = 7.x-1.0
 project = biblio_config
+github = https://raw.github.com/ISUITC/biblio_config/master/biblio_config.info
 dependencies[] = biblio
 dependencies[] = biblio_xml
 dependencies[] = block
