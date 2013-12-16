@@ -37,12 +37,12 @@
 [submodule "sites/all/modules/custom/solr_config"]
 	path = sites/all/modules/custom/solr_config
 	url = https://github.com/ISUITC/solr_config.git
-[submodule "sites/all/modules/custom/biblio_config"]
-	path = sites/all/modules/custom/biblio_config
-	url = https://github.com/ISUITC/biblio_config.git
 [submodule "sites/all/libraries/ckeditor"]
 	path = sites/all/libraries/ckeditor
 	url = https://github.com/ckeditor/ckeditor-releases.git
 [submodule "sites/all/libraries/flexslider"]
 	path = sites/all/libraries/flexslider
 	url = https://github.com/woothemes/FlexSlider
+[submodule "sites/all/modules/custom/biblio_config"]
+	path = sites/all/modules/custom/biblio_config
+	url = https://github.com/ISUITC/biblio_config.git
