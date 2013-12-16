@@ -24,13 +24,6 @@ function biblio_config_user_default_permissions() {
     'module' => 'biblio',
   );
 
-  // Exported permission: 'administer blocks'.
-  $permissions['administer blocks'] = array(
-    'name' => 'administer blocks',
-    'roles' => array(),
-    'module' => 'block',
-  );
-
   // Exported permission: 'edit biblio authors'.
   $permissions['edit biblio authors'] = array(
     'name' => 'edit biblio authors',

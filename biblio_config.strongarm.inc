@@ -56,7 +56,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_base';
-  $strongarm->value = 'publications';
+  $strongarm->value = 'Publications';
   $export['biblio_base'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -70,7 +70,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_base_title';
-  $strongarm->value = 'publications';
+  $strongarm->value = 'Publications';
   $export['biblio_base_title'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -375,7 +375,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_settings__active_tab';
-  $strongarm->value = 'edit-syndication';
+  $strongarm->value = 'edit-general';
   $export['biblio_settings__active_tab'] = $strongarm;
 
   $strongarm = new stdClass();
