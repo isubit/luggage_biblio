@@ -46,6 +46,3 @@
 [submodule "sites/all/libraries/flexslider"]
 	path = sites/all/libraries/flexslider
 	url = https://github.com/woothemes/FlexSlider
-[submodule "biblio_config"]
-	path = biblio_config
-	url = https://github.com/ISUITC/biblio_config.git
