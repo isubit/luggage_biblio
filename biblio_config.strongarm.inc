@@ -125,13 +125,6 @@ function biblio_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'biblio_crossref_pid';
-  $strongarm->value = '';
-  $export['biblio_crossref_pid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'biblio_display_citation_key';
   $strongarm->value = 0;
   $export['biblio_display_citation_key'] = $strongarm;
@@ -149,6 +142,9 @@ function biblio_config_strongarm() {
   $strongarm->name = 'biblio_export_links';
   $strongarm->value = array(
     'xml' => 'xml',
+    'rtf' => 0,
+    'tagged' => 0,
+    'marc' => 0,
   );
   $export['biblio_export_links'] = $strongarm;
 
@@ -270,6 +266,7 @@ function biblio_config_strongarm() {
   $strongarm->name = 'biblio_lookup_links';
   $strongarm->value = array(
     'google' => 'google',
+    'crossref' => 0,
   );
   $export['biblio_lookup_links'] = $strongarm;
 
@@ -284,14 +281,14 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_my_pubs_menu';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['biblio_my_pubs_menu'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_node_layout';
-  $strongarm->value = 'tabular';
+  $strongarm->value = 'orig';
   $export['biblio_node_layout'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -312,7 +309,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_openurl_sid';
-  $strongarm->value = 'Biblio:Aaron Gassmann';
+  $strongarm->value = '';
   $export['biblio_openurl_sid'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -328,13 +325,6 @@ function biblio_config_strongarm() {
   $strongarm->name = 'biblio_orphan_clean_interval';
   $strongarm->value = '604800';
   $export['biblio_orphan_clean_interval'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'biblio_orphan_clean_next_execution';
-  $strongarm->value = 1381939975;
-  $export['biblio_orphan_clean_next_execution'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -375,7 +365,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_settings__active_tab';
-  $strongarm->value = 'edit-general';
+  $strongarm->value = 'edit-search';
   $export['biblio_settings__active_tab'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -430,7 +420,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_sort_tabs_style';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['biblio_sort_tabs_style'] = $strongarm;
 
   $strongarm = new stdClass();
