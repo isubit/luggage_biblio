@@ -13,7 +13,6 @@ dependencies[] = block
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = menu
-dependencies[] = people
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = views
