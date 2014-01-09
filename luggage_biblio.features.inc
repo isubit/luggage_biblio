@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * biblio_config.features.inc
+ * luggage_biblio.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function biblio_config_ctools_plugin_api($module = NULL, $api = NULL) {
+function luggage_biblio_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,6 +16,6 @@ function biblio_config_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function biblio_config_views_api($module = NULL, $api = NULL) {
+function luggage_biblio_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * biblio_config.strongarm.inc
+ * luggage_biblio.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function biblio_config_strongarm() {
+function luggage_biblio_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
@@ -56,7 +56,7 @@ function biblio_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_base';
-  $strongarm->value = 'Publications';
+  $strongarm->value = 'publications';
   $export['biblio_base'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -242,13 +242,6 @@ function biblio_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'biblio_last_ftdid';
-  $strongarm->value = 256;
-  $export['biblio_last_ftdid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'biblio_links_target_new_window';
   $strongarm->value = 0;
   $export['biblio_links_target_new_window'] = $strongarm;
@@ -276,13 +269,6 @@ function biblio_config_strongarm() {
   $strongarm->name = 'biblio_max_user_tid';
   $strongarm->value = 1000;
   $export['biblio_max_user_tid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'biblio_my_pubs_menu';
-  $strongarm->value = 1;
-  $export['biblio_my_pubs_menu'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -360,13 +346,6 @@ function biblio_config_strongarm() {
   $strongarm->name = 'biblio_search_button_text';
   $strongarm->value = 'Search Pubs';
   $export['biblio_search_button_text'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'biblio_settings__active_tab';
-  $strongarm->value = 'edit-search';
-  $export['biblio_settings__active_tab'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
