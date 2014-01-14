@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * biblio_config.features.user_role.inc
+ * luggage_biblio.features.user_role.inc
  */
 
 /**
