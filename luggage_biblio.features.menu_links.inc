@@ -23,11 +23,11 @@ function luggage_biblio_menu_default_menu_links() {
       'identifier' => 'main-menu_publications:publications',
     ),
     'module' => 'system',
-    'hidden' => 1,
+    'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -44,
     'customized' => 1,
   );
   // Translatables
