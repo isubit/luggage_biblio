@@ -142,9 +142,7 @@ function luggage_biblio_strongarm() {
   $strongarm->name = 'biblio_export_links';
   $strongarm->value = array(
     'xml' => 'xml',
-    'rtf' => 0,
     'tagged' => 0,
-    'marc' => 0,
   );
   $export['biblio_export_links'] = $strongarm;
 
@@ -236,7 +234,7 @@ function luggage_biblio_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_keyword_vocabulary';
-  $strongarm->value = '1';
+  $strongarm->value = '2';
   $export['biblio_keyword_vocabulary'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -258,8 +256,8 @@ function luggage_biblio_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_lookup_links';
   $strongarm->value = array(
+    'crossref' => 'crossref',
     'google' => 'google',
-    'crossref' => 0,
   );
   $export['biblio_lookup_links'] = $strongarm;
 
@@ -323,7 +321,7 @@ function luggage_biblio_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_rss';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['biblio_rss'] = $strongarm;
 
   $strongarm = new stdClass();
