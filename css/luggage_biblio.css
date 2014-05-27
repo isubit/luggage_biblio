@@ -2,11 +2,32 @@
   color: inherit;
 }
 
-.biblio-export-buttons .biblio_xml.first {
+.biblio-export .biblio-export-buttons,
+.biblio-export .biblio_xml.first {
     margin: 0;
 }
 
-.biblio-export-buttons .biblio_xml.first a {
+/*.biblio-export .biblio_xml.first a {*/
+    /*background-size: 28px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position-x: 3em;*/
+    /*background-position-y: center;*/
+    /*display: inline-block;*/
+    /*line-height: 3em;*/
+    /*width: 5em;*/
+    /*text-align: left;*/
+    /*background-image: url('../images/icon_export.svg');*/
+    /*background-color: #fff;*/
+    /*border: 1px solid #ccc;*/
+    /*padding-left: 0.5em;*/
+    /*color: #333;*/
+/*}*/
+
+/*.biblio-export-buttons .biblio_xml.first a:hover {*/
+    /*background-color: #ebebeb;*/
+/*}*/
+
+.biblio-export .biblio_xml.first a {
     background-size: 28px;
     background-repeat: no-repeat;
     background-position-x: 3em;
@@ -24,4 +45,5 @@
 
 .biblio-export-buttons .biblio_xml.first a:hover {
     background-color: #ebebeb;
+    border-color: #adadad;
 }
