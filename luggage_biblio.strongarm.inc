@@ -234,7 +234,7 @@ function luggage_biblio_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_keyword_vocabulary';
-  $strongarm->value = '2';
+  $strongarm->value = '3';
   $export['biblio_keyword_vocabulary'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -363,7 +363,7 @@ function luggage_biblio_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'biblio_show_profile';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['biblio_show_profile'] = $strongarm;
 
   $strongarm = new stdClass();
