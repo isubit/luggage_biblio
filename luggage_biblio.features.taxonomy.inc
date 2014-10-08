@@ -10,7 +10,7 @@
 function luggage_biblio_taxonomy_default_vocabularies() {
   return array(
     'keywords' => array(
-      'name' => 'keywords',
+      'name' => 'Keywords',
       'machine_name' => 'keywords',
       'description' => 'Use keywords to group articles on similar topics into categories.',
       'hierarchy' => 0,
