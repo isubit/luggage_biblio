@@ -101,5 +101,4 @@ features[variable][] = biblio_stop_words
 features[variable][] = biblio_style
 features[variable][] = biblio_user_style
 features[variable][] = biblio_view_only_own
-features_exclude[dependencies][luggage_people] = luggage_people
 github = https://raw.github.com/isubit/luggage_biblio/master/luggage_biblio.info
