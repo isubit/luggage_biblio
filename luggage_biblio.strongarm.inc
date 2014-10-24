@@ -428,5 +428,12 @@ function luggage_biblio_strongarm() {
   $strongarm->value = 0;
   $export['biblio_view_only_own'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'publishcontent_biblio';
+  $strongarm->value = 1;
+  $export['publishcontent_biblio'] = $strongarm;
+
   return $export;
 }
