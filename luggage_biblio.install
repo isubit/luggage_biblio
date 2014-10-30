@@ -30,17 +30,3 @@ function luggage_biblio_enable() {
     ))
     ->execute();
 }
-//
-//function luggage_biblio_install() {
-//  db_update('node_type')
-//    ->fields(array('name' => 'Publication','description' => 'Use Publication for scholarly content, such as journal papers and books.'))
-//    ->condition('type', 'biblio')
-//    ->execute();
-//}
-//
-//function luggage_biblio_update() {
-//  db_update('node_type')
-//    ->fields(array('name' => 'Publication','description' => 'Use Publication for scholarly content, such as journal papers and books.'))
-//    ->condition('type', 'biblio')
-//    ->execute();
-//}
