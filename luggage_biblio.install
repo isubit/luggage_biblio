@@ -11,7 +11,6 @@ function luggage_biblio_enable() {
     ->execute();
   db_update('node_type')
     ->fields(array('name' => 'Publication','description' => 'Use Publication for scholarly content, such as journal papers and books.'))
-    ->condition('type', 'module')
-    ->condition('name', 'luggage_biblio')
+    ->condition('type', 'biblio')
     ->execute();
 }
