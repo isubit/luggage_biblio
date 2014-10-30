@@ -9,8 +9,38 @@ function luggage_biblio_enable() {
     ->condition('type', 'module')
     ->condition('name', 'luggage_biblio')
     ->execute();
-  db_update('node_type')
-    ->fields(array('name' => 'Publication','description' => 'Use Publication for scholarly content, such as journal papers and books.'))
-    ->condition('type', 'biblio')
+  db_delete('node_type')
+    ->condition('name', 'Biblio')
+    ->execute();
+  db_insert('node_type')
+    ->fields(array(
+      'type' => 'biblio',
+      'name' => 'Publication',
+      'base' => 'biblio',
+      'module' => 'biblio',
+      'description' => 'Use Publication for scholarly content, such as journal papers and books.',
+      'help' => '',
+      'has_title' => '1',
+      'title_label' => 'Title',
+      'custom' => '0',
+      'modified' => '1',
+      'locked' => '1',
+      'disabled' => '0',
+      'orig_type' => 'biblio',
+    ))
     ->execute();
 }
+//
+//function luggage_biblio_install() {
+//  db_update('node_type')
+//    ->fields(array('name' => 'Publication','description' => 'Use Publication for scholarly content, such as journal papers and books.'))
+//    ->condition('type', 'biblio')
+//    ->execute();
+//}
+//
+//function luggage_biblio_update() {
+//  db_update('node_type')
+//    ->fields(array('name' => 'Publication','description' => 'Use Publication for scholarly content, such as journal papers and books.'))
+//    ->condition('type', 'biblio')
+//    ->execute();
+//}
