@@ -50,7 +50,6 @@ features[user_permission][] = show filter tab
 features[user_permission][] = show own download links
 features[user_permission][] = show sort links
 features[user_permission][] = view full text
-features[user_role][] = biblio editor
 features[variable][] = biblio_annotations
 features[variable][] = biblio_author_link_profile
 features[variable][] = biblio_author_link_profile_path
