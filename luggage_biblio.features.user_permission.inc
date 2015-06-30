@@ -54,15 +54,6 @@ function luggage_biblio_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in keywords'.
-  $permissions['delete terms in keywords'] = array(
-    'name' => 'delete terms in keywords',
-    'roles' => array(
-      'taxonomy editor' => 'taxonomy editor',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'edit any biblio content'.
   $permissions['edit any biblio content'] = array(
     'name' => 'edit any biblio content',
@@ -97,15 +88,6 @@ function luggage_biblio_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in keywords'.
-  $permissions['edit terms in keywords'] = array(
-    'name' => 'edit terms in keywords',
-    'roles' => array(
-      'taxonomy editor' => 'taxonomy editor',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'import from file'.
