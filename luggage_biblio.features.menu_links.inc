@@ -27,13 +27,13 @@ function luggage_biblio_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => 10,
+    'weight' => -44,
     'customized' => 1,
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Publications');
-
 
   return $menu_links;
 }
