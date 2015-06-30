@@ -30,7 +30,6 @@ features[field_base][] = field_biblio_file
 features[field_instance][] = node-biblio-body
 features[field_instance][] = node-biblio-field_biblio_cover
 features[field_instance][] = node-biblio-field_biblio_file
-features[menu_links][] = main-menu_publications:publications
 features[taxonomy][] = keywords
 features[user_permission][] = access biblio content
 features[user_permission][] = administer biblio

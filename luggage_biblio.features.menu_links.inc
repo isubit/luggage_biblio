@@ -27,7 +27,7 @@ function luggage_biblio_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -15,
     'customized' => 1,
   );
 
