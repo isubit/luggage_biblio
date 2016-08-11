@@ -10,7 +10,7 @@
 function luggage_biblio_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-biblio-body'
+  // Exported field_instance: 'node-biblio-body'.
   $field_instances['node-biblio-body'] = array(
     'bundle' => 'biblio',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function luggage_biblio_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-biblio-field_biblio_cover'
+  // Exported field_instance: 'node-biblio-field_biblio_cover'.
   $field_instances['node-biblio-field_biblio_cover'] = array(
     'bundle' => 'biblio',
     'deleted' => 0,
@@ -174,7 +174,7 @@ function luggage_biblio_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-biblio-field_biblio_file'
+  // Exported field_instance: 'node-biblio-field_biblio_file'.
   $field_instances['node-biblio-field_biblio_file'] = array(
     'bundle' => 'biblio',
     'deleted' => 0,
