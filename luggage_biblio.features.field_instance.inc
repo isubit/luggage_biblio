@@ -132,10 +132,7 @@ function luggage_biblio_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
-<<<<<<< Updated upstream
-=======
       'alt_field_required' => 1,
->>>>>>> Stashed changes
       'default_image' => 0,
       'file_directory' => 'biblio/covers',
       'file_extensions' => 'png gif jpg jpeg',
