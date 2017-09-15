@@ -18,7 +18,7 @@ function luggage_biblio_enable() {
       'name' => 'Publication',
       'base' => 'biblio',
       'module' => 'biblio',
-      'description' => 'Use Publication for scholarly content, such as journal papers and books.',
+      'description' => 'Upload or reference your research publications.',
       'help' => '',
       'has_title' => '1',
       'title_label' => 'Title',
